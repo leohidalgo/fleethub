@@ -1,3 +1,5 @@
+use clap::crate_version;
+
 use crate::command_prelude::*;
 use crate::commands;
 
@@ -24,5 +26,6 @@ pub fn main(gctx: &GlobalContext) -> CliResult {
 
 fn cli(gctx: &GlobalContext) -> Command {
     Command::new("fleethub")
+        .version(crate_version!())
         .subcommands(commands::builtin())
 }

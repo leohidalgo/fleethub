@@ -1,0 +1,16 @@
+[package]
+name = "fleethub"
+version = "0.1.0"
+authors = ["leohidalgo <leohidalgo@protonmail.com>"]
+edition = "2021"
+rust-version = "1.76.0"
+repository = "https://github.com/leohidalgo/fleethub"
+publish = false
+
+[lib]
+name = "fleethub"
+path = "src/fleethub/lib.rs"
+
+[[bin]]
+name = "fleethub"
+test = false

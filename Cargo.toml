@@ -16,4 +16,5 @@ name = "fleethub"
 test = false
 
 [dependencies]
+anyhow = "1.0.80"
 clap = "4.5.2"
